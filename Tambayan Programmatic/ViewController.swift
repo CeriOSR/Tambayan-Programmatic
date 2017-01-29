@@ -12,7 +12,7 @@ import Firebase
 
 class EventsCategoryCollectionController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
-    let categories = ["Sports", "Music", "Food", "Tech", "Education", "Business", "Outdoors", "Lazy Sunday", "Misc."]
+    let categories = ["Sports", "Music", "Food", "Tech", "Education", "Business", "Outdoors", "Lazy Sunday", "Misc"]
     //let categoriesImage: [UIImage]?
     let loginController = LoginController()
     private let cellId = "cellId"
@@ -54,6 +54,16 @@ class EventsCategoryCollectionController: UICollectionViewController, UICollecti
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 75, left: 20, bottom: 75, right: 20)
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let layout = UICollectionViewFlowLayout()
+        let eventsCollectionViewController = EventsCollectionViewController(collectionViewLayout: layout)
+        eventsCollectionViewController.category = categories[indexPath.item]
+        eventsCollectionViewController.eventsCategoryController = self
+        let navController = UINavigationController(rootViewController: eventsCollectionViewController)
+        present(navController, animated: true, completion: nil)
+        
     }
 
     func handleLogout() {

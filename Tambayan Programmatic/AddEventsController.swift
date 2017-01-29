@@ -15,7 +15,7 @@ class AddEventsController: UIViewController, UITextViewDelegate, UIPickerViewDel
     
     var placeholderLabel: UILabel?
     
-    let eventsCategory = ["Sports", "Music", "Food", "Tech", "Education", "Business", "Outdoors", "Lazy Sunday", "Misc."]
+    let eventsCategory = ["Sports", "Music", "Food", "Tech", "Education", "Business", "Outdoors", "Lazy Sunday", "Misc"]
     
     var category: String?   //used for pickerView
     
@@ -56,6 +56,7 @@ class AddEventsController: UIViewController, UITextViewDelegate, UIPickerViewDel
         let cp = UIPickerView()
         cp.delegate = self
         cp.dataSource = self
+        cp.showsSelectionIndicator = true
         return cp
     }()
     
@@ -105,7 +106,8 @@ class AddEventsController: UIViewController, UITextViewDelegate, UIPickerViewDel
         view.backgroundColor = .white
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Submit", style: .done, target: self, action: #selector(handleSubmitEventImageToStorage))
         eventImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleSelectEventImage)))
-
+        
+        category = eventsCategory[0]
         
         setupViews()
 
@@ -131,15 +133,24 @@ class AddEventsController: UIViewController, UITextViewDelegate, UIPickerViewDel
         
         //handle the submit button here...
         //guard let eCategory = category else {return}
-        let ref = FIRDatabase.database().reference()
-        ref.child("events").childByAutoId().updateChildValues(values) { (error, reference) in
+        let ref = FIRDatabase.database().reference().child("events")
+        let childref = ref.childByAutoId()
+        childref.updateChildValues(values) { (error, reference) in
             if let err = error {
                 self.createAlert(title: "Could not submit event!", message: err as! String)
                 return
             }
+            guard let eCategory = self.category else {return}
+            let eventId = childref.key
+            FIRDatabase.database().reference().child("categories").child(eCategory).updateChildValues([eventId: 1])
+            
             self.createAlert(title: "Event submitted!", message: "Check out you newly posted event!")
-            self.descriptionTextView.text = ""
-            self.category = nil
+            self.descriptionTextView.text = nil
+            self.eventLocation.text = nil
+            self.eventTitleTextField.text = nil
+            self.datePicker.setDate(Date(), animated: false)
+            self.categoryPicker.selectRow(0, inComponent: 0, animated: true)
+            self.category = self.eventsCategory[0]
         }
         
     }
@@ -214,7 +225,7 @@ class AddEventsController: UIViewController, UITextViewDelegate, UIPickerViewDel
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        category = eventsCategory[row]
+        return category = eventsCategory[row]
     }
     
     //image picker
