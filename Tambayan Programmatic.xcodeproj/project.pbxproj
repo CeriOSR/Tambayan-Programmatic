@@ -7,14 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5609355CF2F908EF7C5B5687 /* Pods_Tambayan_Programmatic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA7EF5C12A1599CA2E32987 /* Pods_Tambayan_Programmatic.framework */; };
+		E02C66811E3B07A900703FFD /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02C66801E3B07A900703FFD /* File.swift */; };
+		E02C66841E3B08B700703FFD /* CollectionViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02C66831E3B08B700703FFD /* CollectionViewCells.swift */; };
+		E03C3A511E3A94AB00A49F85 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03C3A501E3A94AB00A49F85 /* TabBarController.swift */; };
+		E03C3A531E3A98ED00A49F85 /* AddEventsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03C3A521E3A98ED00A49F85 /* AddEventsController.swift */; };
+		E07852701E39712B00AC94AB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E078526F1E39712B00AC94AB /* GoogleService-Info.plist */; };
 		E0E5A18A1E37DA8800722472 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E5A1891E37DA8800722472 /* AppDelegate.swift */; };
 		E0E5A18C1E37DA8800722472 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E5A18B1E37DA8800722472 /* ViewController.swift */; };
 		E0E5A18F1E37DA8800722472 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E5A18D1E37DA8800722472 /* Main.storyboard */; };
 		E0E5A1911E37DA8800722472 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0E5A1901E37DA8800722472 /* Assets.xcassets */; };
 		E0E5A1941E37DA8800722472 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E5A1921E37DA8800722472 /* LaunchScreen.storyboard */; };
+		E0E5A19C1E37F06200722472 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E5A19B1E37F06200722472 /* LoginController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4459B974927B4645507C678F /* Pods-Tambayan Programmatic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tambayan Programmatic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tambayan Programmatic/Pods-Tambayan Programmatic.debug.xcconfig"; sourceTree = "<group>"; };
+		485D1256E0931C8312032ECE /* Pods-Tambayan Programmatic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tambayan Programmatic.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tambayan Programmatic/Pods-Tambayan Programmatic.release.xcconfig"; sourceTree = "<group>"; };
+		8BA7EF5C12A1599CA2E32987 /* Pods_Tambayan_Programmatic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tambayan_Programmatic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E02C66801E3B07A900703FFD /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		E02C66831E3B08B700703FFD /* CollectionViewCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCells.swift; sourceTree = "<group>"; };
+		E03C3A501E3A94AB00A49F85 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		E03C3A521E3A98ED00A49F85 /* AddEventsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventsController.swift; sourceTree = "<group>"; };
+		E078526F1E39712B00AC94AB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E0E5A1861E37DA8800722472 /* Tambayan Programmatic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tambayan Programmatic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0E5A1891E37DA8800722472 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0E5A18B1E37DA8800722472 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +37,8 @@
 		E0E5A1901E37DA8800722472 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0E5A1931E37DA8800722472 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0E5A1951E37DA8800722472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0E5A19B1E37F06200722472 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		E0E5A19D1E38753800722472 /* Tambayan Programmatic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Tambayan Programmatic.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +46,64 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5609355CF2F908EF7C5B5687 /* Pods_Tambayan_Programmatic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46EE034A57EC97841F7610A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BA7EF5C12A1599CA2E32987 /* Pods_Tambayan_Programmatic.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAD9B914E49342DEE2C222F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4459B974927B4645507C678F /* Pods-Tambayan Programmatic.debug.xcconfig */,
+				485D1256E0931C8312032ECE /* Pods-Tambayan Programmatic.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E02C667E1E3B077200703FFD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E0E5A19B1E37F06200722472 /* LoginController.swift */,
+				E03C3A501E3A94AB00A49F85 /* TabBarController.swift */,
+				E03C3A521E3A98ED00A49F85 /* AddEventsController.swift */,
+				E0E5A18B1E37DA8800722472 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E02C667F1E3B079A00703FFD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E02C66801E3B07A900703FFD /* File.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E02C66821E3B087A00703FFD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E02C66831E3B08B700703FFD /* CollectionViewCells.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		E0E5A17D1E37DA8800722472 = {
 			isa = PBXGroup;
 			children = (
 				E0E5A1881E37DA8800722472 /* Tambayan Programmatic */,
 				E0E5A1871E37DA8800722472 /* Products */,
+				CAD9B914E49342DEE2C222F0 /* Pods */,
+				46EE034A57EC97841F7610A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +118,16 @@
 		E0E5A1881E37DA8800722472 /* Tambayan Programmatic */ = {
 			isa = PBXGroup;
 			children = (
+				E02C66821E3B087A00703FFD /* Cells */,
+				E02C667F1E3B079A00703FFD /* Models */,
+				E02C667E1E3B077200703FFD /* Controllers */,
+				E0E5A19D1E38753800722472 /* Tambayan Programmatic.entitlements */,
 				E0E5A1891E37DA8800722472 /* AppDelegate.swift */,
-				E0E5A18B1E37DA8800722472 /* ViewController.swift */,
 				E0E5A18D1E37DA8800722472 /* Main.storyboard */,
 				E0E5A1901E37DA8800722472 /* Assets.xcassets */,
 				E0E5A1921E37DA8800722472 /* LaunchScreen.storyboard */,
 				E0E5A1951E37DA8800722472 /* Info.plist */,
+				E078526F1E39712B00AC94AB /* GoogleService-Info.plist */,
 			);
 			path = "Tambayan Programmatic";
 			sourceTree = "<group>";
@@ -71,9 +139,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0E5A1981E37DA8800722472 /* Build configuration list for PBXNativeTarget "Tambayan Programmatic" */;
 			buildPhases = (
+				C963CB5658C43CB131848EAB /* [CP] Check Pods Manifest.lock */,
 				E0E5A1821E37DA8800722472 /* Sources */,
 				E0E5A1831E37DA8800722472 /* Frameworks */,
 				E0E5A1841E37DA8800722472 /* Resources */,
+				79C506D8C8F78658AD663F34 /* [CP] Embed Pods Frameworks */,
+				A9A43B17F531DF28685BA805 /* [CP] Copy Pods Resources */,
+				E03C3A4F1E3A6DEB00A49F85 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -98,6 +170,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = AS82F53XC3;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -125,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0E5A1941E37DA8800722472 /* LaunchScreen.storyboard in Resources */,
+				E07852701E39712B00AC94AB /* GoogleService-Info.plist in Resources */,
 				E0E5A1911E37DA8800722472 /* Assets.xcassets in Resources */,
 				E0E5A18F1E37DA8800722472 /* Main.storyboard in Resources */,
 			);
@@ -132,13 +210,79 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		79C506D8C8F78658AD663F34 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tambayan Programmatic/Pods-Tambayan Programmatic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9A43B17F531DF28685BA805 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tambayan Programmatic/Pods-Tambayan Programmatic-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C963CB5658C43CB131848EAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E03C3A4F1E3A6DEB00A49F85 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" a999d8e5b76ba3f6d6b636ef2a2d6efc7e33a402 a716c36f29b33a6667eefe15a8ca227cfcb5341284e0ab78a4f7bef4249d79eb";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E0E5A1821E37DA8800722472 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E02C66841E3B08B700703FFD /* CollectionViewCells.swift in Sources */,
 				E0E5A18C1E37DA8800722472 /* ViewController.swift in Sources */,
+				E02C66811E3B07A900703FFD /* File.swift in Sources */,
+				E03C3A511E3A94AB00A49F85 /* TabBarController.swift in Sources */,
+				E0E5A19C1E37F06200722472 /* LoginController.swift in Sources */,
 				E0E5A18A1E37DA8800722472 /* AppDelegate.swift in Sources */,
+				E03C3A531E3A98ED00A49F85 /* AddEventsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +403,10 @@
 		};
 		E0E5A1991E37DA8800722472 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4459B974927B4645507C678F /* Pods-Tambayan Programmatic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Tambayan Programmatic/Tambayan Programmatic.entitlements";
 				DEVELOPMENT_TEAM = AS82F53XC3;
 				INFOPLIST_FILE = "Tambayan Programmatic/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -272,8 +418,10 @@
 		};
 		E0E5A19A1E37DA8800722472 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 485D1256E0931C8312032ECE /* Pods-Tambayan Programmatic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Tambayan Programmatic/Tambayan Programmatic.entitlements";
 				DEVELOPMENT_TEAM = AS82F53XC3;
 				INFOPLIST_FILE = "Tambayan Programmatic/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -302,6 +450,7 @@
 				E0E5A19A1E37DA8800722472 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
