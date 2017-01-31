@@ -17,7 +17,6 @@ class EventsCollectionViewController: UICollectionViewController, UICollectionVi
     var category: String? {
         didSet{
             navigationItem.title = category
-            
         }
     }
     
@@ -49,9 +48,16 @@ class EventsCollectionViewController: UICollectionViewController, UICollectionVi
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! EventsCollectionCell
         let event = events[indexPath.row]
         cell.events = event
-        //cell.eventNameLabel.text = event.eventTitle
-        print(event)
         return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let eventDetailsController = EventDetailsController()
+        eventDetailsController.event = events[indexPath.item]
+        eventDetailsController.eventsCollectionViewController = self
+        let navController = UINavigationController(rootViewController: eventDetailsController)
+        present(navController, animated: true, completion: nil)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -72,7 +78,6 @@ class EventsCollectionViewController: UICollectionViewController, UICollectionVi
             let eventRef = FIRDatabase.database().reference().child("events").child("\(eventId)")
             eventRef.observeSingleEvent(of: .value, with: { (snapshot) in
                 guard let dictionary = snapshot.value as? [String: AnyObject] else {return}
-                print(dictionary)
                 let fetchedEvents = Events()
                 //fetchedEvents.setValuesForKeys(dictionary) //might crash if keys dont match
                 
@@ -84,7 +89,6 @@ class EventsCollectionViewController: UICollectionViewController, UICollectionVi
                 fetchedEvents.eventType = dictionary["category"] as? String
                 
                 self.events.append(fetchedEvents)
-                print(self.events)
                 DispatchQueue.main.async {
                     self.collectionView?.reloadData()
                 }

@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		5609355CF2F908EF7C5B5687 /* Pods_Tambayan_Programmatic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA7EF5C12A1599CA2E32987 /* Pods_Tambayan_Programmatic.framework */; };
 		E02218BA1E3E58EA00542A76 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02218B91E3E58EA00542A76 /* Extensions.swift */; };
+		E02218BE1E40E4A200542A76 /* EventDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02218BD1E40E4A200542A76 /* EventDetailsController.swift */; };
 		E02C66841E3B08B700703FFD /* CollectionViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02C66831E3B08B700703FFD /* CollectionViewCells.swift */; };
 		E02C66861E3D717F00703FFD /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02C66851E3D717F00703FFD /* Models.swift */; };
 		E02C66881E3D729500703FFD /* EventsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02C66871E3D729500703FFD /* EventsCollectionViewController.swift */; };
 		E03C3A511E3A94AB00A49F85 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03C3A501E3A94AB00A49F85 /* TabBarController.swift */; };
 		E03C3A531E3A98ED00A49F85 /* AddEventsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03C3A521E3A98ED00A49F85 /* AddEventsController.swift */; };
 		E07852701E39712B00AC94AB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E078526F1E39712B00AC94AB /* GoogleService-Info.plist */; };
+		E0C024F21E41334E00A12BD8 /* ImageZoomedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C024F11E41334E00A12BD8 /* ImageZoomedController.swift */; };
 		E0E5A18A1E37DA8800722472 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E5A1891E37DA8800722472 /* AppDelegate.swift */; };
 		E0E5A18C1E37DA8800722472 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E5A18B1E37DA8800722472 /* ViewController.swift */; };
 		E0E5A18F1E37DA8800722472 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E5A18D1E37DA8800722472 /* Main.storyboard */; };
@@ -28,12 +30,14 @@
 		485D1256E0931C8312032ECE /* Pods-Tambayan Programmatic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tambayan Programmatic.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tambayan Programmatic/Pods-Tambayan Programmatic.release.xcconfig"; sourceTree = "<group>"; };
 		8BA7EF5C12A1599CA2E32987 /* Pods_Tambayan_Programmatic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tambayan_Programmatic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E02218B91E3E58EA00542A76 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E02218BD1E40E4A200542A76 /* EventDetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailsController.swift; sourceTree = "<group>"; };
 		E02C66831E3B08B700703FFD /* CollectionViewCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCells.swift; sourceTree = "<group>"; };
 		E02C66851E3D717F00703FFD /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		E02C66871E3D729500703FFD /* EventsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsCollectionViewController.swift; sourceTree = "<group>"; };
 		E03C3A501E3A94AB00A49F85 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		E03C3A521E3A98ED00A49F85 /* AddEventsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventsController.swift; sourceTree = "<group>"; };
 		E078526F1E39712B00AC94AB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E0C024F11E41334E00A12BD8 /* ImageZoomedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageZoomedController.swift; sourceTree = "<group>"; };
 		E0E5A1861E37DA8800722472 /* Tambayan Programmatic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tambayan Programmatic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0E5A1891E37DA8800722472 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0E5A18B1E37DA8800722472 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +86,8 @@
 				E03C3A521E3A98ED00A49F85 /* AddEventsController.swift */,
 				E0E5A18B1E37DA8800722472 /* ViewController.swift */,
 				E02C66871E3D729500703FFD /* EventsCollectionViewController.swift */,
+				E02218BD1E40E4A200542A76 /* EventDetailsController.swift */,
+				E0C024F11E41334E00A12BD8 /* ImageZoomedController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -286,10 +292,12 @@
 				E02218BA1E3E58EA00542A76 /* Extensions.swift in Sources */,
 				E0E5A18C1E37DA8800722472 /* ViewController.swift in Sources */,
 				E03C3A511E3A94AB00A49F85 /* TabBarController.swift in Sources */,
+				E02218BE1E40E4A200542A76 /* EventDetailsController.swift in Sources */,
 				E0E5A19C1E37F06200722472 /* LoginController.swift in Sources */,
 				E0E5A18A1E37DA8800722472 /* AppDelegate.swift in Sources */,
 				E03C3A531E3A98ED00A49F85 /* AddEventsController.swift in Sources */,
 				E02C66861E3D717F00703FFD /* Models.swift in Sources */,
+				E0C024F21E41334E00A12BD8 /* ImageZoomedController.swift in Sources */,
 				E02C66881E3D729500703FFD /* EventsCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
