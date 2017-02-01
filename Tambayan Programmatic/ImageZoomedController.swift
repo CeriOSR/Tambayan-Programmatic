@@ -20,18 +20,19 @@ class ImageZoomedController: UIViewController {
         }
     }
     
-    let imageView: UIImageView = {
+    lazy var imageView: UIImageView = {
         let image = UIImageView()
         image.image = #imageLiteral(resourceName: "ringo")
         image.contentMode = .scaleAspectFill
+        image.isUserInteractionEnabled = true
+        image.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleBack)))
         return image
     }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(handleBack))
-
+        
         view.addSubview(imageView)
         
         view.addConstraintsWithFormat(format: "H:|[v0]|", views: imageView)

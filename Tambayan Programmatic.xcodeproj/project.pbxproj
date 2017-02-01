@@ -425,6 +425,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Tambayan Programmatic/Tambayan Programmatic.entitlements";
 				DEVELOPMENT_TEAM = AS82F53XC3;
 				INFOPLIST_FILE = "Tambayan Programmatic/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CeriOS.Tambayan-Programmatic";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -440,6 +441,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Tambayan Programmatic/Tambayan Programmatic.entitlements";
 				DEVELOPMENT_TEAM = AS82F53XC3;
 				INFOPLIST_FILE = "Tambayan Programmatic/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CeriOS.Tambayan-Programmatic";
 				PRODUCT_NAME = "$(TARGET_NAME)";

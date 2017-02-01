@@ -13,17 +13,16 @@ import Firebase
 class EventsCategoryCollectionController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     let categories = ["Sports", "Music", "Food", "Tech", "Education", "Business", "Outdoors", "Lazy Sunday", "Misc"]
-    //let categoriesImage: [UIImage]?
+    
     let loginController = LoginController()
     private let cellId = "cellId"
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tabBarController?.tabBar.isHidden = false
         checkForLoggedInUser()
-        
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(handleLogout))
-        
         collectionView?.backgroundColor = .white
         collectionView?.register(EventCategoryCell.self, forCellWithReuseIdentifier: cellId)
         collectionView?.reloadData()
@@ -72,9 +71,9 @@ class EventsCategoryCollectionController: UICollectionViewController, UICollecti
         let loginManager = FBSDKLoginManager()
         loginManager.logOut()
         
+        navigationController?.pushViewController(loginController, animated: true)
         
-        
-        present(loginController, animated: true, completion: nil)
+        //present(loginController, animated: true, completion: nil)
         
     }
     
@@ -83,8 +82,9 @@ class EventsCategoryCollectionController: UICollectionViewController, UICollecti
         let userId = FIRAuth.auth()?.currentUser?.uid
         
         if userId == nil {
-            present(loginController, animated: true, completion: nil)
-            
+            //present(loginController, animated: true, completion: nil)
+            navigationController?.pushViewController(loginController, animated: true)
+
         }
     }
 

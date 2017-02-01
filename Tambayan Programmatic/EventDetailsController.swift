@@ -95,7 +95,8 @@ class EventDetailsController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        tabBarController?.tabBar.isHidden = false
         view.backgroundColor = .white
         setupViews()
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(handleBack))
@@ -105,8 +106,7 @@ class EventDetailsController: UIViewController {
         
         let imageZoomedController = ImageZoomedController()
         imageZoomedController.event = event
-        let navCon = UINavigationController(rootViewController: imageZoomedController)
-        present(navCon, animated: true, completion: nil)
+        present(imageZoomedController, animated: true, completion: nil)
     }
     
     func handleBack() {

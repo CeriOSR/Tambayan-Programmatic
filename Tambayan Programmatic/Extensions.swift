@@ -44,3 +44,23 @@ extension UIImageView {
     }
 
 }
+
+//shorten the constraints, COPY AND PASTE THIS WHEN USING addConstraints withVisualFormat
+extension UIView {
+    
+    func addConstraintsWithFormat(format: String, views: UIView...) {
+        //making the views dictionary
+        var viewsDictionary = [String: UIView]()
+        //loop through the views and assign a index to the views then stick that index to the string as the viewID
+        for (index, view) in views.enumerated() {
+            let key = "v\(index)"
+            viewsDictionary[key] = view
+            view.translatesAutoresizingMaskIntoConstraints = false
+        }
+        //adding the parameters into the addConstraints() method
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: format, options: NSLayoutFormatOptions(), metrics: nil, views: viewsDictionary))
+        
+    }
+    
+}
+

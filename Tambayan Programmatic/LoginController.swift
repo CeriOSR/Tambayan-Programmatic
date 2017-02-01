@@ -18,6 +18,9 @@ class LoginController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDe
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationController?.isNavigationBarHidden = true
+        tabBarController?.tabBar.isHidden = true
 
         view.backgroundColor = .white
         
@@ -129,7 +132,17 @@ class LoginController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDe
         
         let userId = FIRAuth.auth()?.currentUser?.uid
         if userId != nil {
-            dismiss(animated: true, completion: nil)
+            //dismiss(animated: true, completion: nil)
+            
+//            //setting up a collectionView Controller for the events
+//            let layout = UICollectionViewFlowLayout()
+//            let eventsCategoryCollectionController = EventsCategoryCollectionController(collectionViewLayout: layout)
+//            let navController = UINavigationController(rootViewController: eventsCategoryCollectionController)
+//            present(navController, animated: true, completion: nil)
+            
+            //try presenting tab bar controller instead.
+            let tabBarController = TabBarController()
+            present(tabBarController, animated: true, completion: nil)
         }
 
         
@@ -164,22 +177,4 @@ class LoginController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDe
        
 }
 
-//shorten the constraints, COPY AND PASTE THIS WHEN USING addConstraints withVisualFormat
-extension UIView {
-    
-    func addConstraintsWithFormat(format: String, views: UIView...) {
-        //making the views dictionary
-        var viewsDictionary = [String: UIView]()
-        //loop through the views and assign a index to the views then stick that index to the string as the viewID
-        for (index, view) in views.enumerated() {
-            let key = "v\(index)"
-            viewsDictionary[key] = view
-            view.translatesAutoresizingMaskIntoConstraints = false
-        }
-        //adding the parameters into the addConstraints() method
-        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: format, options: NSLayoutFormatOptions(), metrics: nil, views: viewsDictionary))
-        
-    }
-    
-}
 
